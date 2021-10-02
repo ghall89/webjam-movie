@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
 body {
 	background-color: #19202e;
+	font-family: 'Amiri', serif;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 4rem;
+	color: #ead89e;
+	animation: fadein1 5s;
 }
 
 .forest-sprites {
 	position: relative;
-	margin-top: 15%;
+	margin-top: 8%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
+	animation: fadein2 5s;
 }
 
 .sprite-bodies {
@@ -22,6 +34,8 @@ body {
 	animation: shake 0.2s;
 	animation-iteration-count: infinite;
 }
+
+/* Head positions */
 
 .head-1 {
 	left: 1%;
@@ -41,6 +55,32 @@ body {
 .head-4 {
 	left: 85%;
 	top: 57%;
+}
+
+/* Animations */
+
+@keyframes fadein1 {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadein2 {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes shake {
