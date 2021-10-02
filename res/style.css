@@ -1,0 +1,47 @@
+body {
+	background-color: #19202e;
+}
+
+.forest-sprites {
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.sprite-bodies {
+}
+
+.sprite-head {
+	position: relative;
+	width: 10rem;
+}
+
+.sprite-head:hover {
+	animation: shake 0.2s;
+	animation-iteration-count: infinite;
+}
+
+.head-1 {
+}
+
+.head-2 {
+}
+
+.head-3 {
+}
+
+.head-4 {
+}
+
+@keyframes shake {
+	0% {
+		transform: translateX(0px) rotate(0deg);
+	}
+	30% {
+		transform: rotate(3deg);
+	}
+	100% {
+		transform: translateX(2px) rotate(-4deg);
+	}
+}
